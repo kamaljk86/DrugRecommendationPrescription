@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Drug Prescription</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hint_search_drugs">Search by Drug name</string>
+    <string name="currency">\u20B9</string>
+</resources>

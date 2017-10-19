@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="co.in.drugprescription.HomeActivity"
+    android:background="@drawable/homescreen_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drug Prescription"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:textSize="@dimen/thirtytwo_textSize"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/lyt_search_doctor_specialities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:layout_centerInParent="true">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoSearchDrugItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/search_icon"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:maxLength="40"
+            android:clickable="true"
+            android:textSize="@dimen/fifteen_textSize"
+            android:hint="@string/hint_search_drugs"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/fab_margin">
+
+        <Button android:id="@+id/speakButton"
+            android:layout_width="wrap_content"
+            android:onClick="speakButtonClicked"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/speak_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/speakButton"
+            android:text="Tap to Speak"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:textSize="@dimen/eighteen_textSize"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</RelativeLayout>
